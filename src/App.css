@@ -23,7 +23,7 @@ h1 {
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(120px, 2fr)); 
   gap: 12px; /* расстояние между карточками */
   padding: 12px;
   box-sizing: border-box;
@@ -39,13 +39,6 @@ h1 {
   transition: transform 0.3s ease, background-color 0.3s ease;
   position: relative;
   overflow: hidden;
-}
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
-  gap: 12px; /* расстояние между карточками */
-  padding: 12px;
-  box-sizing: border-box;
 }
 
 .card.flipped {
