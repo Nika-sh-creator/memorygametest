@@ -4,7 +4,7 @@ import React, { useReducer, useEffect } from "react";
 import "./App.css";
 
 const generateDeck = () => {
-  const colors = ["#6B8E23", "#D2B48C", "#FFFFFF", "#A52A2A"];
+  const colors = ["#6B8E23", "#cdd28c", "#FFFFFF", "#A52A2A"];
   const deck = [];
   for (let color of colors) {
     deck.push({ color, matched: false });

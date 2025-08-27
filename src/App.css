@@ -1,6 +1,6 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f5f5dc;
+  background-color: #eee8de;
   margin: 0;
   padding: 0;
   display: flex;
@@ -32,7 +32,7 @@ h1 {
 .card {
   width: 100px;
   height: 150px;
-  background-color: #fff;
+  background-color: #f1f1e6;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   cursor: pointer;
