@@ -1,3 +1,5 @@
+const appBaseUrl = import.meta.env.VITE_APP_BASE_URL;
+
 import React, { useReducer, useEffect } from "react";
 import "./App.css";
 
@@ -97,6 +99,15 @@ const App = () => {
       console.log("Telegram WebApp инициализирован ✅", tg);
     }
   }, []);
+  useEffect(() => {
+    if (window.Telegram?.WebApp) {
+      const tg = window.Telegram.WebApp;
+      tg.ready();
+      console.log("Telegram Mini App запущен");
+      console.log("APP_BASE_URL:", appBaseUrl);
+    }
+  }, []);
+  
 
   const handleCardClick = (index) => {
     if (

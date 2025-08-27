@@ -6,7 +6,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #d2b48c 0%, #6b8e23 100%);
+  background-color:  #d2b48c;
 }
 
 .App {
@@ -23,18 +23,18 @@ h1 {
 
 .deck {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-gap: 10px;
-  justify-content: center;
-  margin-bottom: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+  gap: 12px; /* расстояние между карточками */
+  padding: 12px;
+  box-sizing: border-box;
 }
 
 .card {
   width: 100px;
-  height: 100px;
+  height: 150px;
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
   position: relative;
