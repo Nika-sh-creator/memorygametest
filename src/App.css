@@ -21,20 +21,20 @@ h1 {
   color: #fff;
 }
 
-.cards-container {
+.deck {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px; /* расстояние между карточками */
-  padding: 12px;
-  box-sizing: border-box;
+  grid-template-columns: repeat(2, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .card {
   width: 100px;
   height: 150px;
-  background-color: #f0f4e2;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
   position: relative;
